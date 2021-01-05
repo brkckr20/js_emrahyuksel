@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arabam = {
+            marka : "ford",
+            renk : "beyaz",
+            yil : 2004,
+            km : 32332,
+        }
+
+        console.log(arabam);
+
+
+        //fonksiyonla nesne tanımlama
+
+        function araba(marka,renk,yil,model){
+            this.marka = marka;
+            this.yil = yil;
+            this.renk = renk;
+            this.model = model;
+        }
+
+        var yeniAraba = new araba("Kia","pembe",2003,"sorento");
+
+        console.log(yeniAraba);
+
+
+       
+    </script>
+</body>
+</html>

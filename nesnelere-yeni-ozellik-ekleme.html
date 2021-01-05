@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function araba(marka,renk,model){
+            this.marka = marka;
+            this.model = model;
+            this.renk = renk;
+        }
+        //ekleme işlemi
+        araba.prototype.fiyat = 4320;
+
+        var araba1 = new araba("toyota","gri",2004);
+        console.log(araba1);
+
+
+
+    </script>
+</body>
+</html>

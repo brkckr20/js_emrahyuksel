@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * nesnelere metot ekleme
+         * 
+        */
+
+        var ogrenci = {
+            ad : "Burak",
+            soyad : "Çakır",
+            yas : 29,
+            adSoyad : function(){
+                return this.ad + " " + this.soyad
+            },
+            yasHesap : function(){
+                return 2021 - this.yas;
+            }
+        }
+
+        document.write(ogrenci.adSoyad() + "<br>"); // nesne içindeki metodu çağırma
+        document.write("Doğum yılın :  " + ogrenci.yasHesap()); // nesne içindeki metodu çağırma
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="sonuc"></div>
+    <script>
+       // alert("Ben ne işe yararım ki!!");
+
+   /*    var sayi1 = prompt("Sayı gir kardşm!!");
+       var sayi2 = prompt("Sayı gir kardşm!!");
+        var sonuc = parseInt(sayi1) + parseInt(sayi2);
+       document.getElementById("sonuc").innerHTML = sonuc;
+       
+   */ 
+
+   /*
+        
+   var sayim = prompt("Döngü numarasını gir");
+        var dondur = parseInt(sayim);
+        for (var i = 0; i < dondur; i++) {
+        document.write("<h5>" + (i + 1) + ". eleman" + "</h5>");
+        
+        }
+
+   */
+  //PROJE ÖDEVİ h1 ile h6 arasındaki başlık etiketlerini kullanarak ekrana alttaki metni yazdır.
+
+  
+  for (var i = 1;i<7;i++) {
+      document.write("<h"+i+">proje ödevi</h"+i+">");
+      
+  }
+
+   //PROJE ÖDEVİ 2 1-10 arası sayıları ekrana yazdır ve karşılarına tek / çift olmasını yazdır.
+  document.write("<hr>");
+   var durum;
+   for (var i=0;i<10;i++) {
+       if (i%2==0) {
+        durum = "Çift";
+        document.write(i + "Sayısı : " + durum + "<br>");
+       } else {
+        durum = "Tek";
+        document.write(i + "Sayısı : " + durum + "<br>");
+       }
+   }
+
+
+        
+   
+
+
+   
+
+
+    </script>
+</body>
+</html>

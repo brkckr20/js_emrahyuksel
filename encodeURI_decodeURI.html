@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //encodeURI - bir url yi şifrelemek için kullanılabilir.
+        var url = "mytest.html?ad=burak&soyad=memçöşiğ";
+        document.write(url + "</br>");
+        document.write(encodeURI(url)); //yabancı karakterleri şifreler
+
+        document.write("<br>");
+        document.write(decodeURI(url)); // bu da dönüştürülmüş karakterleri eski haline getirmek için kullanılır.
+        </script>
+</body>
+</html>

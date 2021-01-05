@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <input type="text" id="text" placeholder="Doğum yılını giriniz..">
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="hesapla();">Hesapla</button>
+    </div>
+
+    <script>
+        
+        function hesapla(){
+            var deger = document.getElementById("text").value;
+            var d = new Date();
+            var n = d.getFullYear();
+
+            var yas = n - parseInt(deger);
+            if (deger == "") {
+                alert("Lütfen sayı giriniz..");
+            }
+            
+            else if (n<parseInt(deger)) {
+                alert("Bu yıldan büyük bir yıl giremezsiniz");
+            }
+            else{
+                alert("Yaş : " +  yas);
+            }
+            
+        }
+    </script>
+</body>
+</html>

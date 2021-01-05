@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*   var a = 10;
+        try {
+            document.write(a + b);
+        } catch (error) {
+            document.write("Hatalı işlem. Hata Sebebi =" + error); //hata bulunması durumunda çalışacak bölüm burasıdır.
+
+
+        }*/
+
+        //try - throw
+
+        var x = 30;
+        var y = 30;
+
+        try {
+            if (x<y) {
+                throw "buyuk";
+            }
+            else if (x==y) {
+                throw "esit";
+            }
+        } catch (error) {
+            if (error == "buyuk") {
+               alert("Burası hata olması sonucunda açılan bir alert pençiresi");
+            }
+            if (error == "esit") {
+               alert("sayılar eşit hatası");
+            }
+        }/*
+        finally{
+            işlem hatalı olsa da programda çalışmasını istediğimiz kodlar bu blok içerisine yazılır.
+        }
+
+        */
+
+
+    </script>
+</body>
+</html>
